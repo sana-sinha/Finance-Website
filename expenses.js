@@ -1,3 +1,5 @@
 function returntext() {
-    let expenses = document.getElementById("expenses").value;
+    let name = document.getElementById("expensesName").value;
+    let fee = document.getElementById("expensesValue").value;
+    let rep = document.getElementById("expensesTime").value;
 }
