@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="expenses.css">
-    <script src="expenses.js"></script>
-    <div class="expenses">
+    <script src="expenses.js" defer> </script>
+    <div class="expenses"> 
         <h1>What are your weekly required expenses?</h1>
         <p>These include rent, food, utilities, gas, groceries, and internet.</p>
         <form>
@@ -13,7 +13,8 @@
             <br> <p>How many times a year do you make this payment? For example, something you pay for monthly would be "12". </p>
             <input id="expensesTime" type="text"> <br>
         </form>
-        <button> submit this expense !</button>
+        <button onclick="returnText()"> submit this expense !</button>
+        <p id="expenses"> </p>
         <button onclick="window.location.href = 'debt.html';">Next</button>
     </div>
 </head>
