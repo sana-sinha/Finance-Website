@@ -1,39 +1,11 @@
-function debt_returntext() {
-    let debt = document.getElementById("debt").value;
-}
-
-let allNames = [];
-let allFees = [];
-let allReps = [];
-let total = "";
-
-function expenses_returnText() {
-
-    let name = document.getElementById("expensesName").value;
-    let fee = document.getElementById("expensesValue").value;
-    let rep = document.getElementById("expensesTime").value;
-
-    allNames.push(name);
-    allFees.push(fee);
-    allReps.push(rep);
-
-    total += name + ": $" + fee + ", " + rep + "x per year <br>";
-
-    document.getElementById("expenses").innerHTML = total;
-}
-
-function income_returntext() {
-    let income = document.getElementById("income").value;
-}
-
 
 let tot = "";
 // making arrays
-let allAmounts = [];
-let allTerms = [];
-let allInterests = [];
-let allCompounds = [];
-let allPaybacks = [];
+var allAmounts = [];
+var allTerms = [];
+var allInterests = [];
+var allCompounds = [];
+var allPaybacks = [];
 
 function loan_returnText() {
 
@@ -99,19 +71,4 @@ function loan_returnText() {
     // printed items! successfully pushed --> arrays
     tot += "$" + amount + ", " + term + " month term, " + interest + "% interest, compounded " + comp + " times per year, paid back " + payb + " times per year.<br>";
     document.getElementById("loans").innerHTML = tot;
-}
-
-monthlyString = "";
-
-function interest_returnText() {
-    let interestDec = 0;
-    let totalPayments = 0;
-    let monthlyPayment = 0;
-    for (let i = 0; i<allAmounts.length; i++){
-        interestDec = (allInterests[i]/100)/allCompounds[i];
-        totalPayments = allPaybacks[i]*allTerms[i];
-        monthlyPayment = allAmounts[i] / ((((1+interestDec)**totalPayments)-1)/(interestDec*((1+interestDec)**totalPayments)));
-    }
-    monthlyString += monthlyPayment + "<br>";
-    document.getElementById("test").innerHTML = monthlyString;
 }
