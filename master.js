@@ -104,22 +104,16 @@ function loan_returnText() {
     document.getElementById("loans").innerHTML = tot;
 }
 
-/*
-let interestDec = 0;
-let totalPayments = 0;
-let monthlyPayment = 0;*/
-
+let j = 0;
 function interest_returnText() {
-    /*let interestDec = (interest/100)/comp;
-    let totalPayments = payb*term;
-    let monthlyPayment = amount / ((((1+interestDec)^totalPayments)-1)/(interestDec*((1+interestDec)^totalPayments)));*/
     let interestDec = 0;
     let totalPayments = 0;
     let monthlyPayment = 0;
-    for (let i = 0; i<allAmounts.length; i++){
+    for (i = j; i<allAmounts.length; i++){
         interestDec = (allInterests[i]/100)/allCompounds[i];
         totalPayments = allPaybacks[i]*allTerms[i];
         monthlyPayment = allAmounts[i] / ((((1+interestDec)**totalPayments)-1)/(interestDec*((1+interestDec)**totalPayments)));
     }
     document.getElementById("test").innerHTML = monthlyPayment;
+    j++;
 }
