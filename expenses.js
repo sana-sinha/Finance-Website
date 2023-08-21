@@ -1,7 +1,7 @@
-let allNames = [];
-let allFees = [];
-let allReps = [];
-let total = "";
+var allNames = [];
+var allFees = [];
+var allReps = [];
+var total = "";
 
 function expenses_returnText() {
 

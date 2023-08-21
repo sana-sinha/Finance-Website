@@ -1,5 +1,6 @@
 let monthlyString = "";
 var allPayments = [];
+var result = "";
 
 function interest_returnText() {
     let interestDec = 0;
@@ -11,6 +12,10 @@ function interest_returnText() {
         monthlyPayment = allAmounts[i] / ((((1+interestDec)**totalPayments)-1)/(interestDec*((1+interestDec)**totalPayments)));
         allPayments.push(monthlyPayment);
     }
-    monthlyString += monthlyPayment + "<br>";
-    document.getElementById("test").innerHTML = monthlyString;
+    
+    for(let x = 0; x < allPayments.length; x++) {
+        result += allPayments[x] + "<br>";
+    }
+
+    document.getElementById("test").innerHTML = result;
 }
