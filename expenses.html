@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="expenses.css">
-    <script src="expenses.js" defer> </script>
+    <script src="master.js" defer> </script>
     <div class="expenses"> 
         <h1>What are your weekly required expenses?</h1>
         <p>These include rent, food, utilities, gas, groceries, internet, etc - just anything that is a necessity.</p>
@@ -14,7 +14,7 @@
             <input id="expensesTime" type="text"> <br>
         <br>
         </form>
-        <button onclick="returnText()">Submit expense</button>
+        <button onclick="expenses_returnText()">Submit expense</button>
         <p id="expenses"> </p>
         <button onclick="window.location.href = 'debt.html';">Next</button>
     </div>
