@@ -3,6 +3,7 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans';
 }
 
 .income{
@@ -14,5 +15,15 @@
   flex-direction: column;
   gap: 10px;
   transition: all 1s;
-  background-color: lightcoral;
+  background-image: url("https://t3.ftcdn.net/jpg/00/46/40/36/360_F_46403663_eu2oNaZjGmYXRKg9sQWmK7QiXdJSEGpi.jpg");
+  background-size: cover;
 }
+
+p {
+  font-weight: bold;
+}
+
+button {
+  border-radius: 2px;
+}
+
