@@ -37,6 +37,10 @@ button {
   background-color: transparent;
 }
 
+button:hover {
+  background-color: rgba(0,0,0,.30);
+}
+
 p {
   font-weight: bold;
 }

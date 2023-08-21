@@ -15,17 +15,28 @@
     flex-direction: column;
     gap: 10px;
     transition: all 1s;
-    background-color: lightblue;
+    background-image: url("https://img.freepik.com/free-photo/abstract-purple-smooth-wave-lines_1017-24865.jpg");
+    background-size: cover;
+  }
+
+  form {
+    align-items: center;
   }
 
   input {
     padding: 10px 24px;
+    align-items: center;
   }
   
   button {
     padding: 10px 24px;
     border-radius: 2px;
     font-weight: bold;
+    background-color: transparent;
+  }
+  
+  button:hover {
+    background-color: rgba(0,0,0,.30);
   }
   
   p {

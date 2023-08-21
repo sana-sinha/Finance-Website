@@ -15,7 +15,7 @@
   flex-direction: column;
   gap: 10px;
   transition: all 1s;
-  background-image: url("https://t3.ftcdn.net/jpg/00/46/40/36/360_F_46403663_eu2oNaZjGmYXRKg9sQWmK7QiXdJSEGpi.jpg");
+  background-image: url("https://img.freepik.com/premium-vector/abstract-smooth-blue-wave-vector-flow-curve-blue-motion-illustration_206325-1069.jpg");
   background-size: cover;
 }
 
@@ -31,5 +31,9 @@ button {
   padding: 10px 24px;
   border-radius: 2px;
   font-weight: bold;
+  background-color: transparent;
 }
 
+button:hover {
+  background-color: rgba(0,0,0,.30);
+}
