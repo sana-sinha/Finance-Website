@@ -11,9 +11,6 @@
             <input id="loanTerm" type="text" placeholder="months"> <br>
             <br> <p>Interest Rate</p>
             <input id="interestRate" type="text" placeholder="%"> <br>
-            <br> <p>Payment Every Month</p>
-            <input id="perMonth" type="text" placeholder="$"> 
-            <br>
             <br> <label for="compound">Choose a compound rate:</label> 
                 <select name="compound" id="compound"> 
                     <option value="monthly">monthly (apr)</option> 
@@ -41,10 +38,9 @@
 
         <br>
         <button onclick="returnText()">Submit Loan</button>
-        <br>
-        <br>
-
         <p id="loans"> </p>
+
+        <button onclick="window.location.href = 'interest.html';">Calculate</button>
 
     </div>
 </head>
