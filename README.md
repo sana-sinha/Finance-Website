@@ -1,1 +1,2 @@
 # Finance-Website
+Follow the instructions on each page of the site and click relevant buttons, including any boxed elements labelled "Calculate," "Next," and "See My _____." Using this website, you should be able to list your income and annual expenses, calculate your total weekly expenses, list the number of loans and each loan you ought to pay off, and calculate your loan payments according to your payback rate. Enjoy!
