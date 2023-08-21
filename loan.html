@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="loan.css">
     <script src="loan.js" defer> </script>
     <div class="loan"> 
+        <h1> Loan Information </h1>
         <form>
             <br> <p>Loan Amount</p>
             <input id="loanAmount" type="text" placeholder="$"> <br>
@@ -11,8 +12,9 @@
             <br> <p>Interest Rate</p>
             <input id="interestRate" type="text" placeholder="%"> <br>
             <br> <p>Payment Every Month</p>
-            <input id="perMonth" type="text" placeholder="$"> <br>
-            <label for="compound">Choose a compound rate:</label> 
+            <input id="perMonth" type="text" placeholder="$"> 
+            <br>
+            <br> <label for="compound">Choose a compound rate:</label> 
                 <select name="compound" id="compound"> 
                     <option value="monthly">monthly (apr)</option> 
                     <option value="annually">annually (apy)</option> 
@@ -23,7 +25,7 @@
                     <option value="daily">daily</option> 
                     <option value="continuously">continuously</option> 
                 </select> <br>
-
+<br>
             <label for="payback">Choose your payback rate:</label> 
                 <select name="payback" id="payback"> 
                     <option value="month"> every month </option> 
@@ -38,7 +40,7 @@
         </form>    
 
         <br>
-        <button onclick="returnText()">Submit loan</button>
+        <button onclick="returnText()">Submit Loan</button>
         <br>
         <br>
 

@@ -17,3 +17,17 @@
   transition: all 1s;
   background-color: lightseagreen;
 }
+
+input {
+  padding: 10px 24px;
+}
+
+button {
+  padding: 10px 24px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+}

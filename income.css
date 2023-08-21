@@ -23,7 +23,13 @@ p {
   font-weight: bold;
 }
 
+input {
+  padding: 10px 24px;
+}
+
 button {
+  padding: 10px 24px;
   border-radius: 2px;
+  font-weight: bold;
 }
 

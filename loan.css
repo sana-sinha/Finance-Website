@@ -1,19 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap%27');
 
 *{
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans';
-  }
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans';
+}
+
+.loan{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 1s;
+  background-color: lightseagreen;
+}
+
+input {
+  padding: 10px 24px;
+}
+
+option {
+  padding: 10px 24px;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 24px;
+  border-radius: 2px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+p {
+  font-weight: bold;
+}
   
-  .expenses{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    transition: all 1s;
-    background-color: lightyellow;
-  }
