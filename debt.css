@@ -15,7 +15,8 @@
   flex-direction: column;
   gap: 10px;
   transition: all 1s;
-  background-color: lightseagreen;
+  background-image: url("https://img.freepik.com/premium-vector/abstract-vector-color-wave-design-elementtransparent-smooth-wavesmoky-texture_206325-1252.jpg");
+  background-size: cover;
 }
 
 input {

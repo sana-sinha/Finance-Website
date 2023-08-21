@@ -15,7 +15,8 @@
   flex-direction: column;
   gap: 10px;
   transition: all 1s;
-  background-color: lightseagreen;
+  background-image: url("https://img.freepik.com/free-vector/abstract-orange-line-flowing-wave-background_1035-23199.jpg");
+  background-size: cover;
 }
 
 input {
