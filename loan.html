@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="loan.css">
+    <script src="loan.js" defer> </script>
+    <div class="loan"> 
+        <form>
+            <br> <p>Loan Amount</p>
+            <input id="loanAmount" type="text" placeholder="$"> <br>
+            <br> <p>Loan Term</p>
+            <input id="loanTerm" type="text" placeholder="months"> <br>
+            <br> <p>Interest Rate</p>
+            <input id="interestRate" type="text" placeholder="%"> <br>
+            <br>
+            <label for="compound">Choose a compound rate:</label> 
+                <select name="compound" id="compound"> 
+                    <option value="monthly">monthly (apr)</option> 
+                    <option value="annually">annually (apy)</option> 
+                    <option value="semi-annually">semi-annually</option> 
+                    <option value="semi-monthly">semi-monthly</option> 
+                    <option value="biweekly">biweekly</option> 
+                    <option value="weekly">weekly</option> 
+                    <option value="daily">daily</option> 
+                    <option value="continuously">continuously</option> 
+                </select> <br>
+
+            <label for="payback">Choose your payback rate:</label> 
+                <select name="payback" id="payback"> 
+                    <option value="month"> every month </option> 
+                    <option value="day"> every day </option> 
+                    <option value="week"> every week </option> 
+                    <option value="two-weeks"> every two weeks </option> 
+                    <option value="half-month"> every half month </option> 
+                    <option value="quarter"> every quarter </option> 
+                    <option value="six-months"> every six months </option> 
+                    <option value="year"> every year </option> 
+                </select>
+        </form>    
+
+        <script type="text/javascript">
+            function getOption() {
+                elem1 = document.querySelector('#compound');
+                compoundVal = selectElement.options[selectElement.selectedIndex].value;
+                elem2 = document.querySelector('#payback');
+                paybackVal = selectElement.options[selectElement.selectedIndex].value;
+            }
+        </script>    
+
+        <br>
+        <button onclick="returnText()">Submit expense</button>
+
+    </div>
+</head>
