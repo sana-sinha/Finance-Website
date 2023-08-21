@@ -36,17 +36,12 @@
                 </select>
         </form>    
 
-        <script type="text/javascript">
-            function getOption() {
-                elem1 = document.querySelector('#compound');
-                compoundVal = selectElement.options[selectElement.selectedIndex].value;
-                elem2 = document.querySelector('#payback');
-                paybackVal = selectElement.options[selectElement.selectedIndex].value;
-            }
-        </script>    
-
         <br>
-        <button onclick="returnText()">Submit expense</button>
+        <button onclick="returnText()">Submit loan</button>
+        <br>
+        <br>
+
+        <p id="loans"> </p>
 
     </div>
 </head>
